@@ -1,14 +1,15 @@
-import Landing from "../src/pages/Landing"
-import './App.css'
+import { BrowserRouter } from "react-router-dom";
+import Landing from "../src/pages/Landing";
+import "./App.css";
 
 function App() {
-  
   return (
     <>
-    
-    <Landing />
+      <BrowserRouter>
+        <Landing />
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
