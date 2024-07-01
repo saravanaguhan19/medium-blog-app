@@ -3,8 +3,28 @@ import Navbar from "../components/Navbar";
 import BlogPage from "./BlogPage";
 import BlogDetails from "./BlogDetails";
 import CreateBlog from "./CreateBlog";
+import { useState } from "react";
 
 function Landing() {
+  const [blogs, setBlogs] = useState([
+    {
+      title: "",
+      content: "",
+      createdBy: "Saravana",
+      createAt: "15 min ago.",
+      comments: [{}],
+    },
+  ]);
+
+
+  const [blog , setBlog] = useState({
+    title: "",
+    content: "",
+    createdBy: "Saravana",
+    createAt: "15 min ago.",
+    comments: [{}],
+  })
+
   return (
     <div>
       <Navbar />

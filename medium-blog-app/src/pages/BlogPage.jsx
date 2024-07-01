@@ -1,6 +1,6 @@
 import Blog from "../components/Blog";
 
-function BlogPage() {
+function BlogPage({ti}) {
   return (
     <div>
       Blog Page
