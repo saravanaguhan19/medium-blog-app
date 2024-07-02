@@ -1,27 +1,22 @@
 import Blog from "../components/Blog";
 
-function BlogPage({ti}) {
+
+function BlogPage({ blogs }) {
+  console.log(blogs);
+
   return (
     <div>
       Blog Page
-      <Blog
-        title={"this is the title"}
-        content={"this is the content of the blog"}
-        name={"saravana"}
-        time={"15min ago"}
-      />
-      <Blog
-        title={"this is second blog "}
-        content={"this is content of second blog"}
-      />
-      <Blog
-        title={"this is the title"}
-        content={"this is the content of the blog"}
-      />
-      <Blog
-        title={"this is second blog "}
-        content={"this is content of second blog"}
-      />
+      {blogs.map((blog) => (
+        <Blog
+          key={blog.id}
+          id={blog.id}
+          title={blog.title}
+          content={blog.content}
+          name={blog.createdBy}
+          time={blog.createAt}
+        />
+      ))}
     </div>
   );
 }
