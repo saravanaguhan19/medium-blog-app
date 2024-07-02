@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 function Blog({ id, title, content, name, time }) {
   return (
-    <div className="flex justify-center items-center mb-3">
+    <div className="flex justify-center items-center mb-3 ">
       <Link to={`/blog/${id}`}>
-        <div className="flex  bg-black max-w-[650px] h-64 p-10  text-white rounded-lg">
+        <div className="flex   max-w-[650px] h-64 p-10 shadow-xl   rounded-lg">
           <div className="basis-1/4">
             <img
               className="w-60 rounded-full"

@@ -1,12 +1,10 @@
 import Blog from "../components/Blog";
 
-
 function BlogPage({ blogs }) {
   console.log(blogs);
 
   return (
     <div>
-      Blog Page
       {blogs.map((blog) => (
         <Blog
           key={blog.id}
